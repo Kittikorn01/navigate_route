@@ -16,10 +16,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      initialRoute: HomeScreen.routeName,
+      initialRoute: HomeScreen.routeName, // ชื่อ route เริ่มต้น
       routes: {
         HomeScreen.routeName: (context) => const HomeScreen(),
         DetailScreen.routeName: (context) => const DetailScreen(),
+        // เพิ่ม screens อื่นๆ ที่นี่ภายหลัง
       },
     );
   }
