@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DetailScreen extends StatelessWidget {
-  static const routeName = '/';
+  static const routeName = '/detail';
   const DetailScreen({super.key});
 
   @override
@@ -22,7 +22,7 @@ class DetailScreen extends StatelessWidget {
             Text('ได้รับ: $pageTitle'),
             ElevatedButton(
               onPressed: () {
-                Navigator.pop(context);
+                Navigator.pop(context, 'ข้อมูลจาก Detail_screen');
               },
               child: Text('Go Back'),
             ),
